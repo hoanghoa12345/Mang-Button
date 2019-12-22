@@ -36,9 +36,9 @@ namespace Mang_Button
                     buttons[i, j] = new Button();
                     buttons[i, j].Width = 35;
                     buttons[i, j].Location = new Point(i * 40, j * 40);
-                    buttons[i, j].Text = array[i, j].ToString();
+                    //buttons[i, j].Text = array[i, j].ToString();
                     buttons[i, j].Click += button_Click;
-                    buttons[i,j].Tag = i;
+                    buttons[i,j].Tag = i + "," + j;
                     panel1.Controls.Add(buttons[i, j]);
                 }
             }
@@ -47,8 +47,10 @@ namespace Mang_Button
         private void button_Click(object sender, EventArgs e)
         {
             Button button = sender as Button;
-            lbItem.Text = button.Text;
-            int tag = Int32.Parse(button.Tag.ToString());
+            string[] getTag = button.Tag.ToString().Split(',');
+            int tag = Int32.Parse(getTag[0]);
+            int row = Int32.Parse(getTag[1]);
+            button.Text = array[row, tag].ToString();
             int tong = 0;
             for(int i=0;i<5;i++)
             {

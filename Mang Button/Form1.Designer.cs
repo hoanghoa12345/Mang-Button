@@ -31,8 +31,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtTong = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lbItem = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel1
@@ -58,32 +56,11 @@
             this.txtTong.Size = new System.Drawing.Size(100, 22);
             this.txtTong.TabIndex = 2;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(667, 119);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(123, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Giá trị vừa click là:";
-            // 
-            // lbItem
-            // 
-            this.lbItem.AutoSize = true;
-            this.lbItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbItem.Location = new System.Drawing.Point(654, 176);
-            this.lbItem.Name = "lbItem";
-            this.lbItem.Size = new System.Drawing.Size(72, 55);
-            this.lbItem.TabIndex = 4;
-            this.lbItem.Text = "ck";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 614);
-            this.Controls.Add(this.lbItem);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtTong);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -100,8 +77,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtTong;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lbItem;
     }
 }
 
