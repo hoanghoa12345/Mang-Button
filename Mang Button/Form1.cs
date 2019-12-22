@@ -54,7 +54,7 @@ namespace Mang_Button
             int tong = 0;
             for(int i=0;i<5;i++)
             {
-                tong += array[tag, i];
+                tong += array[i, tag];
             }
             txtTong.Text = tong.ToString();
         }
